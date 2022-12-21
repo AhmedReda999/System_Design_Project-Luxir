@@ -37,7 +37,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -96,13 +96,14 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(298, 95);
+            this.textBox1.MaxLength = 16;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(156, 23);
             this.textBox1.TabIndex = 3;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(298, 184);
+            this.textBox2.Location = new System.Drawing.Point(522, 186);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(156, 23);
             this.textBox2.TabIndex = 3;
@@ -124,18 +125,17 @@
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(298, 137);
+            this.textBox3.MaxLength = 4;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(156, 23);
             this.textBox3.TabIndex = 3;
             // 
-            // textBox4
+            // dateTimePicker1
             // 
-            this.textBox4.BackColor = System.Drawing.Color.PapayaWhip;
-            this.textBox4.Location = new System.Drawing.Point(562, 53);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(149, 362);
-            this.textBox4.TabIndex = 4;
+            this.dateTimePicker1.Location = new System.Drawing.Point(298, 181);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
+            this.dateTimePicker1.TabIndex = 4;
             // 
             // Form4
             // 
@@ -145,7 +145,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(761, 427);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox1);
@@ -175,6 +175,6 @@
         private TextBox textBox2;
         private Label label4;
         private TextBox textBox3;
-        private TextBox textBox4;
+        private DateTimePicker dateTimePicker1;
     }
 }

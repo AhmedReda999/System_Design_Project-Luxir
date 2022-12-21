@@ -42,10 +42,10 @@
             this.label12 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
@@ -221,8 +221,9 @@
             this.comboBox1.Location = new System.Drawing.Point(349, 110);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(49, 25);
+            this.comboBox1.Size = new System.Drawing.Size(61, 25);
             this.comboBox1.TabIndex = 1;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // comboBox2
             // 
@@ -243,60 +244,9 @@
             this.comboBox2.Location = new System.Drawing.Point(349, 167);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(49, 28);
+            this.comboBox2.Size = new System.Drawing.Size(61, 28);
             this.comboBox2.TabIndex = 1;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.BackColor = System.Drawing.Color.SandyBrown;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.comboBox3.Location = new System.Drawing.Point(349, 373);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(49, 25);
-            this.comboBox3.TabIndex = 1;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.BackColor = System.Drawing.Color.SandyBrown;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "half and half",
-            "full chocklate",
-            "full crima",
-            "4 season",
-            "black forest",
-            "white forest"});
-            this.comboBox4.Location = new System.Drawing.Point(108, 373);
-            this.comboBox4.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(49, 25);
-            this.comboBox4.TabIndex = 1;
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.BackColor = System.Drawing.Color.SandyBrown;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
-            "Small = 150 L.e",
-            "Medium = 350 L.e",
-            "Large = 500 L.e"});
-            this.comboBox5.Location = new System.Drawing.Point(214, 373);
-            this.comboBox5.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(49, 25);
-            this.comboBox5.TabIndex = 1;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // comboBox6
             // 
@@ -313,11 +263,67 @@
             "8",
             "9",
             "10"});
-            this.comboBox6.Location = new System.Drawing.Point(349, 212);
+            this.comboBox6.Location = new System.Drawing.Point(343, 373);
             this.comboBox6.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(49, 25);
+            this.comboBox6.Size = new System.Drawing.Size(67, 25);
             this.comboBox6.TabIndex = 1;
+            this.comboBox6.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.BackColor = System.Drawing.Color.SandyBrown;
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "half and half",
+            "full chocklate",
+            "full crima",
+            "4 season",
+            "black forest",
+            "white forest"});
+            this.comboBox4.Location = new System.Drawing.Point(48, 373);
+            this.comboBox4.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(121, 25);
+            this.comboBox4.TabIndex = 1;
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.BackColor = System.Drawing.Color.SandyBrown;
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Items.AddRange(new object[] {
+            "Small = 150 L.e",
+            "Medium = 250 L.e",
+            "Large = 300 L.e"});
+            this.comboBox5.Location = new System.Drawing.Point(188, 373);
+            this.comboBox5.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(116, 25);
+            this.comboBox5.TabIndex = 1;
+            this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.comboBox5_SelectedIndexChanged);
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.BackColor = System.Drawing.Color.SandyBrown;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.comboBox3.Location = new System.Drawing.Point(349, 212);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(61, 25);
+            this.comboBox3.TabIndex = 1;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox6_SelectedIndexChanged);
             // 
             // checkBox1
             // 
@@ -326,10 +332,11 @@
             this.checkBox1.Location = new System.Drawing.Point(487, 113);
             this.checkBox1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(37, 21);
+            this.checkBox1.Size = new System.Drawing.Size(38, 21);
             this.checkBox1.TabIndex = 2;
-            this.checkBox1.Text = " 9";
+            this.checkBox1.Text = "13";
             this.checkBox1.UseVisualStyleBackColor = false;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // checkBox2
             // 
@@ -338,9 +345,9 @@
             this.checkBox2.Location = new System.Drawing.Point(487, 163);
             this.checkBox2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(39, 21);
+            this.checkBox2.Size = new System.Drawing.Size(41, 21);
             this.checkBox2.TabIndex = 2;
-            this.checkBox2.Text = "14";
+            this.checkBox2.Text = "20";
             this.checkBox2.UseVisualStyleBackColor = false;
             // 
             // checkBox3
@@ -350,9 +357,9 @@
             this.checkBox3.Location = new System.Drawing.Point(487, 217);
             this.checkBox3.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(39, 21);
+            this.checkBox3.Size = new System.Drawing.Size(34, 21);
             this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "16";
+            this.checkBox3.Text = "9";
             this.checkBox3.UseVisualStyleBackColor = false;
             // 
             // textBox1
@@ -411,7 +418,7 @@
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(47, 378);
+            this.checkBox4.Location = new System.Drawing.Point(15, 378);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(15, 14);
             this.checkBox4.TabIndex = 6;
@@ -435,9 +442,9 @@
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.comboBox6);
+            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label9);
@@ -479,10 +486,10 @@
         private Label label12;
         private ComboBox comboBox1;
         private ComboBox comboBox2;
-        private ComboBox comboBox3;
+        private ComboBox comboBox6;
         private ComboBox comboBox4;
         private ComboBox comboBox5;
-        private ComboBox comboBox6;
+        private ComboBox comboBox3;
         private CheckBox checkBox1;
         private CheckBox checkBox2;
         private CheckBox checkBox3;

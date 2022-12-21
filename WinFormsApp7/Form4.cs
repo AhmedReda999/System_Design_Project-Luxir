@@ -43,8 +43,11 @@ namespace WinFormsApp7
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
+        {            
+            Random r = new Random();
+            int x = r.Next(0, 1000000000);
+            MessageBox.Show("Your Order ID Is " + x, "Thank You for Your Purchase", MessageBoxButtons.OK);
+            Application.Exit();
         }
     }
 }
